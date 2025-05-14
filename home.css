@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -14,23 +15,13 @@ html{
 
 }
 
-header{
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/stitch-chromebook-wallpaper.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
 
 .main{
     width: 100%;
     height: 100vh;
-    background-color:pink;
+    background-color:rgb(244, 154, 170);
     position: absolute;
     top: 0;
-    left: -50%;
     overflow: hidden;
     opacity: .5;
 
@@ -64,18 +55,6 @@ header .navbar .logo{
      color: #333;
      padding: .5rem 1rem;
      margin: 0 .5rem;
-}
-
-header p{
-    transform: rotate(-90deg);
-    position: absolute;
-    font-weight: normal;
-    font-size: 16px;
-    top: 50%;
-    left: -5%;
-    text-transform: uppercase;
-    font-family: "Roboto Condensed", Arial, sans-serif;
-
 }
 
 header .text-box{
@@ -114,42 +93,58 @@ header .text-box a{
     padding: 3rem;
 }
 
-.btn-group .button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #e874b0;
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background: transparent;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-btn {
+    position: center;
+    padding: 50px 80px;
+    font-size: 2.0rem;
+    font-weight: bold;
     border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(135deg, #ff69b4, #e53090);
     cursor: pointer;
-    margin: 5px;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
   }
   
-  .button span {
-    cursor: pointer;
-    display: inline-block;
+  .nav-btn span {
     position: relative;
-    transition: 0.5s;
+    z-index: 2;
   }
   
-  .button span:after {
-    content: '\00bb';
+  .nav-btn::before {
+    content: "";
     position: absolute;
-    opacity: 0;
     top: 0;
-    right: -20px;
-    transition: 0.5s;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1;
   }
   
-  .button:hover span {
-    padding-right: 25px;
+  .nav-btn:hover::before {
+    left: 0;
   }
   
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
+  .nav-btn:hover {
+    transform: translateY(-5px) scale(1.07);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
   }
