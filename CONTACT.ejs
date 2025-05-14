@@ -3,11 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-</head>
-<body>
-  <h1>Welcome to the CONTACT Page</h1>
+  <title>Contact Me</title>
 
-  
-</body>
-</html>
+  <link rel="stylesheet" href="/CONTACT.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+
+<body>
+  <div class="background">
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="btn-group">
+          <a href="/home"><button class="nav-btn" style="animation-delay: 0.2s"><span>HOME</span></button></a>
+          <a href="/ME"><button class="nav-btn" style="animation-delay: 0.4s"><span>ME</span></button></a>
+          <a href="/PICS"><button class="nav-btn" style="animation-delay: 0.6s"><span>PICS</span></button></a>
+          <a href="/CONTACT"><button class="nav-btn" style="animation-delay: 0.8s"><span>CONTACT</span></button></a>            
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="glass-card fade-in">
+      <h2>📬 Get in Touch</h2>
+      <p>If you'd like to connect, collaborate, or just say hello—I'd love to hear from you!</p>
+
+      <div class="contact-info">
+        <p><i class="fas fa-user"></i> Samiyyah Huckabee</p>
+        <p><i class="fas fa-envelope"></i> s.huckabee29@email.com</p>
+        <p><i class="fas fa-phone"></i> (678) 882-8506</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/samiyyahhuckabee" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/Samiyyah-H" target="_blank">GitHub</a></p>
+      </div>
+
+      <form class="contact-form" method="POST" action="/send">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message
