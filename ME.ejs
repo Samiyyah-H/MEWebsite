@@ -3,11 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-</head>
-<body>
-  <h1>Welcome to the ME Page</h1>
+  <title>ME Page</title>
 
+  <link rel="stylesheet" href="/ME.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+
+<body>
+  <div class="background">
+    <header>
+      <div class="main">
+        <nav class="navbar">
+          <div class="btn-group">
+              <a href="/home"><button class="nav-btn" style="animation-delay: 0.2s"><span>HOME</span></button></a>
+              <a href="/ME"><button class="nav-btn" style="animation-delay: 0.4s"><span>ME</span></button></a>
+              <a href="/PICS"><button class="nav-btn" style="animation-delay: 0.6s"><span>PICS</span></button></a>
+              <a href="/CONTACT"><button class="nav-btn" style="animation-delay: 0.8s"><span>CONTACT</span></button></a>            
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="glass-card">
+      <h2>Hello, I'm SAMIYYAH HUCKABEE 👋</h2>
+      <p>I'm a recent Computer Science graduate with a strong passion for software development and game creation. I'm driven by curiosity, creativity, and a desire to build experiences that make an impact. My goal is to grow as a developer and contribute to innovative projects in both tech and gaming.</p>
+
+
+      <div class="skills-section fade-in">
+        <h3>🔧 Skills & Strengths</h3>
+      
+        <div class="skill-bar">
+          <span>Languages</span>
+          <div class="bar"><div class="fill" style="width: 75%"></div></div>
+        </div>
+      
+        <div class="skill-bar">
+          <span>Frameworks & Tools</span>
+          <div class="bar"><div class="fill" style="width: 50%"></div></div>
+        </div>
+      
+        <div class="skill-bar">
+          <span>Front-End</span>
+          <div class="bar"><div class="fill" style="width: 85%"></div></div>
+        </div>
+      
+        <div class="skill-bar">
+          <span>Back-End</span>
+          <div class="bar"><div class="fill" style="width: 75%"></div></div>
+        </div>
+      
+        <div class="skill-bar">
+          <span>Version Control</span>
+          <div class="bar"><div class="fill" style="width: 45%"></div></div>
+        </div>
+      
+        <div class="skill-bar">
+          <span>Testing & Debugging</span>
+          <div class="bar"><div class="fill" style="width: 60%"></div></div>
+        </div>
+      
+        <div class="skill-bar">
+          <span>Development</span>
+          <div class="bar"><div class="fill" style="width: 75%"></div></div>
+        </div>
+      </div>
+      
+  </div>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+  
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
   
 </body>
 </html>
