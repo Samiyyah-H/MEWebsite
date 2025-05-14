@@ -38,6 +38,10 @@ app.get("/PICS", (req, res) => {
 
 app.get("/CONTACT", (req, res) => {
     res.render("CONTACT");
+})
+
+app.get("/home", (req, res) => {
+    res.render("home");
 });
 
 //register user
@@ -90,3 +94,11 @@ const port = 5000;
 app.listen(port, () => {
     console.log('Server is running on Port: 5000');
 })
+
+app.post('/send', (req, res) => {
+    const { name, email, message } = req.body;
+    console.log(`Message from ${name} (${email}): ${message}`);
+    // Optionally: send an email or store the message
+    res.redirect('/contact');
+  });
+  
