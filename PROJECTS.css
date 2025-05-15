@@ -1,0 +1,163 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff69b4, #ffe4e1);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Background container */
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #ff69b4, #ffe4e1);
+    animation: bgMove 20s linear infinite;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: transparent;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-btn {
+    padding: 50px 80px;
+    font-size: 2.0rem;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: bounceIn 1s ease both;
+  }
+  
+  .nav-btn:hover::before {
+    left: 0;
+  }
+
+  .nav-btn:hover {
+    transform: translateY(-5px) scale(1.07);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #00000033;
+  }
+  
+  /* Project cards */
+  .projects-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    animation: fadeInUp 0.8s ease forwards;
+    border-left: 6px solid #ff69b4;
+  }
+  
+  .project-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .project-card p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .project-card a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card a:hover {
+    color: #222;
+  }
+  
+  /* Animations */
+  @keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .nav-btn {
+      font-size: 0.9rem;
+      padding: 12px 20px;
+    }
+  
+    .section-title {
+      font-size: 2.25rem;
+    }
+  }
+  
