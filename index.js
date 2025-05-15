@@ -32,8 +32,8 @@ app.get("/ABOUT", (req, res) => {
     res.render("ABOUT");
 })
 
-app.get("/PICS", (req, res) => {
-    res.render("PICS");
+app.get("/PROJECTS", (req, res) => {
+    res.render("PROJECTS");
 })
 
 app.get("/CONTACT", (req, res) => {
@@ -101,4 +101,5 @@ app.post('/send', (req, res) => {
     // Optionally: send an email or store the message
     res.redirect('/contact');
   });
+  
   
