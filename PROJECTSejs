@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Samiyyah H</title>
+
+  <link rel="stylesheet" href="/PROJECTS.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+  <header>
+    <div class="background"></div>
+    <nav class="navbar">
+      <div class="btn-group">
+        <a href="/home"><button class="nav-btn" style="animation-delay: 0.2s"><span>HOME</span></button></a>
+        <a href="/ME"><button class="nav-btn" style="animation-delay: 0.4s"><span>ME</span></button></a>
+        <a href="/PROJECTS"><button class="nav-btn" style="animation-delay: 0.6s"><span>PROJECTS</span></button></a>
+        <a href="/CONTACT"><button class="nav-btn" style="animation-delay: 0.8s"><span>CONTACT</span></button></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="projects-container">
+    <h1 class="section-title">Projects</h1>
+
+    <section class="project-card">
+      <h2>Portfolio Website</h2>
+      <p><strong>Status:</strong> Completed</p>
+      <p><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, HTML, CSS</p>
+      <p>A full-stack personal website that showcases my technical skills and contact functionality. Features include a backend built with Express.js and MongoDB to manage contact form submissions, and a responsive front end using HTML and CSS.</p>
+      <a href="https://github.com/Samiyyah-H/MEWebsite.git" target="_blank">View GitHub Repository</a>
+    </section>
+
+    <section class="project-card">
+      <h2>CampusBuzz Mobile App</h2>
+      <p><strong>Role:</strong> Software Engineer</p>
+      <p><strong>Duration:</strong> Jan 2024 – May 2024</p>
+      <p><strong>Tech Stack:</strong> Swift, Agile, HTML (initial)</p>
+      <p>Collaborated on a student-centered mobile app at Jackson State University. Led the migration from HTML to Swift, improving performance and reducing load time by 40%. Designed the “Add Event” feature, which boosted user engagement by 15%. Participated in Agile sprint planning and peer code reviews.</p>
+    </section>
+
+    <section class="project-card">
+      <h2>Virtual Hospital App (Capstone Project)</h2>
+      <p><strong>Role:</strong> Software Developer</p>
+      <p><strong>Duration:</strong> Apr 2022 – May 2023</p>
+      <p><strong>Tech Stack:</strong> C++, C#, Visual Studio, Postman</p>
+      <p>Built a secure appointment scheduling system as part of a capstone team. Designed backend logic for user data and integrated it with a streamlined database solution. Conducted testing using Postman and Visual Studio to ensure application stability and security.</p>
+    </section>
+
+    <section class="project-card">
+      <h2>Unreal Engine Game (In Progress)</h2>
+      <p><strong>Role:</strong> Game Developer</p>
+      <p><strong>Duration:</strong> Aug 2023 – Dec 2023</p>
+      <p><strong>Tech Stack:</strong> Unreal Engine 5, C++, Blueprints</p>
+      <p>Personal project focused on developing a third-person action game using Unreal Engine 5. Built core systems including Player Input, Game Mode, and complex character mechanics. Created dynamic AI using Blueprints and a wave-spawner system.</p>
+    </section>
+  </main>
+
+</body>
+</html>
