@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+  }
+
+  .background {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff69b4, #ffe4e1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: bgMove 20s linear infinite;
+    perspective: 1000px;
+    gap: 40px;
+    padding-top: 20px;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .glass-card h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff1493;
+  }
+  
+  .glass-card p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-info a {
+    color: #ff1493;
+    text-decoration: none;
+  }
+  
+  .contact-info i {
+    color: #ff1493;
+    animation: pulse 1.5s infinite alternate;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #ff1493;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e60073;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+   /* Navbar styling */
+   .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: transparent;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-btn {
+    padding: 50px 80px;
+    font-size: 2.0rem;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: bounceIn 1s ease both;
+  }
+  
+  .nav-btn:hover::before {
+    left: 0;
+  }
+
+  .nav-btn:hover {
+    transform: translateY(-5px) scale(1.07);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #00000033;
+  }
+  
+  
